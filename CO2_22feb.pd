@@ -1,0 +1,13 @@
+#N canvas 0 51 1366 694 10;
+#X obj 53 103 comport 9600 0;
+#X obj 53 125 serial_print;
+#X obj 57 157 s;
+#X floatatom 255 141 5 0 0 0 - - -, f 5;
+#X msg 48 49 open 0;
+#X msg 136 51 close;
+#X obj 255 119 r co2_result;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 3 0;

@@ -1,0 +1,48 @@
+#N canvas 176 158 450 300 10;
+#X obj 60 73 gemwin;
+#X msg 57 20 create \, 1;
+#X msg 58 40 destroy;
+#X obj 292 230 pix_texture;
+#X obj 283 385 rectangle 16 9;
+#X obj 312 144 scale;
+#X obj 100 159 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8850 1;
+#X obj 331 298 scale;
+#X obj 350 249 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4100 1;
+#X obj 314 177 translateXYZ;
+#X obj 370 149 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 522 195 r mouseX;
+#X obj 582 195 r mouseY;
+#X obj 525 226 map 0 640 -8 8;
+#X obj 625 226 map 0 380 4.5 -4.5;
+#X obj 193 222 pix_mask;
+#X obj 289 48 gemhead 50;
+#X obj 193 253 alpha;
+#X obj 111 233 r hackman;
+#X obj 130 318 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 272 86 pix_image;
+#X msg 438 44 open /media/kaushal/003C67C83C67B6F6/pd_extnd/pd_extnd/hackmask_1.png
+;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 7 0;
+#X connect 5 0 9 0;
+#X connect 6 0 5 1;
+#X connect 7 0 4 0;
+#X connect 8 0 7 1;
+#X connect 9 0 15 1;
+#X connect 10 0 9 1;
+#X connect 11 0 13 0;
+#X connect 12 0 14 0;
+#X connect 13 0 9 1;
+#X connect 14 0 9 2;
+#X connect 15 0 17 0;
+#X connect 16 0 20 0;
+#X connect 17 0 3 0;
+#X connect 18 0 15 0;
+#X connect 19 0 17 0;
+#X connect 20 0 5 0;
+#X connect 21 0 20 0;

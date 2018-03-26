@@ -1,0 +1,109 @@
+#N canvas 0 51 1366 694 10;
+#X obj 53 83 gemhead 1;
+#X obj 53 105 color;
+#X obj 53 127 scale;
+#X obj 53 149 rotateXYZ;
+#X obj 53 171 alpha;
+#X obj 53 193 rectangle 16 9;
+#X obj 987 130 gemwin;
+#X msg 978 88 create \, 1;
+#X msg 1093 132 destroy;
+#X msg 1122 187 0;
+#X msg 1073 82 dimen 1280 760;
+#X obj 492 86 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8500 1;
+#X obj 492 106 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3400 1;
+#X obj 492 126 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2400 1;
+#X obj 492 146 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 319 105 bondo 4;
+#X obj 319 127 pack 0 0 0 0;
+#X obj 492 236 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2550 1;
+#X obj 492 306 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9800 1;
+#X obj 492 326 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7700 1;
+#X obj 492 346 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8050 1;
+#X obj 518 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 518 431 auto \$1;
+#X obj 498 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 492 457 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 63 525 color;
+#X obj 63 547 scale;
+#X obj 63 569 rotateXYZ;
+#X obj 63 591 alpha;
+#X obj 63 643 rectangle 16 9;
+#X obj 722 86 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X obj 722 106 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5350 1;
+#X obj 722 126 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5400 1;
+#X obj 722 146 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9100 1;
+#X obj 319 525 bondo 4;
+#X obj 319 547 pack 0 0 0 0;
+#X obj 722 236 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7050 1;
+#X obj 722 306 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7200 1;
+#X obj 722 326 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1300 1;
+#X obj 722 346 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1600 1;
+#X obj 748 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 748 431 auto \$1;
+#X obj 728 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 722 457 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7000 1;
+#X obj 63 503 gemhead 2;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 0;
+#X connect 10 0 6 0;
+#X connect 11 0 15 0;
+#X connect 12 0 15 1;
+#X connect 13 0 15 2;
+#X connect 14 0 15 3;
+#X connect 15 0 16 0;
+#X connect 16 0 1 1;
+#X connect 17 0 2 1;
+#X connect 18 0 3 1;
+#X connect 19 0 3 2;
+#X connect 20 0 3 3;
+#X connect 21 0 22 0;
+#X connect 22 0 4 0;
+#X connect 23 0 4 0;
+#X connect 24 0 4 1;
+#X connect 25 0 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 30 0 34 0;
+#X connect 31 0 34 1;
+#X connect 32 0 34 2;
+#X connect 33 0 34 3;
+#X connect 34 0 35 0;
+#X connect 35 0 25 1;
+#X connect 36 0 26 1;
+#X connect 37 0 27 1;
+#X connect 38 0 27 2;
+#X connect 39 0 27 3;
+#X connect 40 0 41 0;
+#X connect 41 0 28 0;
+#X connect 42 0 28 0;
+#X connect 43 0 28 1;
+#X connect 44 0 25 0;
